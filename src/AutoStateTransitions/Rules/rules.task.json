@@ -2,19 +2,19 @@
   "type": "Task",
   "rules": [
     {
-      "ifChildState": "Active",
+      "ifChildState": "In Progress",
       "notParentStates": [ "Active", "Resolved" ],
       "setParentStateTo": "Active",
       "allChildren": false
     },
     {
-      "ifChildState": "New",
+      "ifChildState": "To Do",
       "notParentStates": [ "Active", "Resolved", "New" ],
       "setParentStateTo": "Active",
       "allChildren": false
     },
     {
-      "ifChildState": "Closed",
+      "ifChildState": "Done",
       "notParentStates": [],
       "setParentStateTo": "Closed",
       "allChildren": true
