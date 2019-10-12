@@ -2,21 +2,21 @@
   "type": "Task",
   "rules": [
     {
-      "ifChildState": "In Progress",
-      "notParentStates": [ "Active", "Resolved" ],
-      "setParentStateTo": "Active",
+      "ifChildState": "Active",
+      "notParentStates": [ "Commited", "Removed" ],
+      "setParentStateTo": "Commited",
       "allChildren": false
     },
     {
-      "ifChildState": "To Do",
-      "notParentStates": [ "Active", "Resolved", "New" ],
-      "setParentStateTo": "Active",
+      "ifChildState": "New",
+      "notParentStates": [ "Approved", "Commited", "New", "Removed" ],
+      "setParentStateTo": "Approved",
       "allChildren": false
     },
     {
-      "ifChildState": "Done",
+      "ifChildState": "Closed",
       "notParentStates": [],
-      "setParentStateTo": "Closed",
+      "setParentStateTo": "Done",
       "allChildren": true
     }
   ]
