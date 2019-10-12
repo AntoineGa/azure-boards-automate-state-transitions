@@ -3,13 +3,13 @@
   "rules": [
     {
       "ifChildState": "In Progress",
-      "notParentStates": [ "Commited", "Removed" ],
-      "setParentStateTo": "Commited",
+      "notParentStates": [ "Committed", "Removed" ],
+      "setParentStateTo": "Committed",
       "allChildren": false
     },
     {
       "ifChildState": "To Do",
-      "notParentStates": [ "Approved", "Commited", "New", "Removed" ],
+      "notParentStates": [ "Approved", "Committed", "New", "Removed" ],
       "setParentStateTo": "Approved",
       "allChildren": false
     },
