@@ -9,7 +9,7 @@
     },
     {
       "ifChildState": "To Do",
-      "notParentStates": [ "Approved", "Committed", "New", "Removed" ],
+      "notParentStates": [ "Approved", "Committed", "Removed" ],
       "setParentStateTo": "Approved",
       "allChildren": false
     },
