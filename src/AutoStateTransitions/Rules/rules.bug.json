@@ -1,0 +1,24 @@
+
+{
+  "type": "Bug",
+  "rules": [
+    {
+      "ifChildState": "In Progress",
+      "notParentStates": [ "Committed", "Removed" ],
+      "setParentStateTo": "Committed",
+      "allChildren": false
+    },
+    {
+      "ifChildState": "To Do",
+      "notParentStates": [ "Approved", "Committed", "Removed" ],
+      "setParentStateTo": "Approved",
+      "allChildren": false
+    },
+    {
+      "ifChildState": "Done",
+      "notParentStates": [],
+      "setParentStateTo": "Done",
+      "allChildren": true
+    }
+  ]
+}
